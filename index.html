@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <form name="formCalculator">
+            <div class="calculator">
+    
+                <input type="text" id= "result" name="evalresult" class="calculator-screen" disabled />
+              
+                <div class="calculator-keys">
+              
+                  <input type="button" name="btnAddition" class="operator"  onClick="valuecal(btnAddition.value)" value="+"/>
+                  <input type="button" name="btnsubtract" class="operator" onClick="valuecal(btnsubtract.value)" value="-"/>
+                  <input type="button" name="btnmultiply" class="operator"  onClick="valuecal(btnmultiply.value)" value="*">
+                  <input type="button" name="btndivision" class="operator" onClick="valuecal(btndivision.value)" value="/">
+              
+                  <input type="button" name= "btn7"onClick="valuecal(btn7.value)" value="7"/>
+                  <input type="button" name="btn8" onClick="valuecal(btn8.value)" value="8"/>
+                  <input type="button" name="btn9" onClick="valuecal(btn9.value)" value="9"/>
+              
+              
+                  <input type="button" name="btn4" onClick="valuecal(btn4.value)" value="4"/>
+                  <input type="button" name="btn5" onClick="valuecal(btn5.value)" value="5"/>
+                  <input type="button" name="btn6" onClick="valuecal(btn6.value)" value="6"/>
+              
+              
+                  <input type="button" name="btn1" onClick="valuecal(btn1.value)" value="1"/>
+                  <input type="button" name="btn2" onClick="valuecal(btn2.value)" value="2"/>
+                  <input type="button" name="btn3" onClick="valuecal(btn3.value)" value="3"/>
+              
+              
+                  <input type="button" name="btn0" onClick="valuecal(btn0.value)" value="0"/>
+                  <input type="button" name="btnDot" class="decimal"  onClick="valuecal(btnDot.value)" value="."/>
+                  <input type="button"  class= "all-clear" value="c"  onclick="clr()"/>
+              
+                  <input type="button" name="result" class="equal-sign" onClick="evalresult.value=eval(evalresult.value)" value="="/>
+              
+                </div>
+              </div>
+        </form>
+       
+    </div>
+    
+</body>
+<script src="myscripts.js"></script>
+</html>
